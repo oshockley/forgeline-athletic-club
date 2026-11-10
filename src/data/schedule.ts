@@ -13,6 +13,17 @@ export const dayNames: Record<Day, string> = {
   Sun: 'Sunday',
 }
 
+export interface ScheduleFilters {
+  day: Day | 'All'
+  type: ClassType | 'All'
+}
+
+/** Date#getDay() is 0 = Sunday; the Forgeline week starts on Monday. */
+export const todayKey = (): Day => days[(new Date().getDay() + 6) % 7]
+
+/** The schedule opens on today's classes; "All days" is one tap away. */
+export const initialScheduleFilters = (): ScheduleFilters => ({ day: todayKey(), type: 'All' })
+
 export interface ScheduleEntry {
   id: string
   day: Day

@@ -21,8 +21,8 @@ const image = (id: string, alt: string, caption: string): GalleryImage => ({
 export const gallery: GalleryImage[] = [
   image(
     '1541534741688-6078c6bfb5c5',
-    'Member gripping a loaded barbell before a heavy pull',
-    'Priya · Deadlift 60 kg → 125 kg in 14 months',
+    'Member pressing a loaded barbell overhead in a squat rack',
+    'Priya · Strict press 25 kg → 50 kg in 14 months',
   ),
   image(
     '1532029837206-abbe2b7620e3',
@@ -32,7 +32,7 @@ export const gallery: GalleryImage[] = [
   image(
     '1534367610401-9f5ed68180aa',
     'Close-up of a tattooed lifter gripping a barbell',
-    'Ryan · First 200 kg squat at age 41',
+    'Rosa · First 140 kg squat at age 41',
   ),
   image(
     '1574680096145-d05b474e2155',

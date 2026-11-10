@@ -15,7 +15,7 @@ type LinkProps = CommonProps & AnchorHTMLAttributes<HTMLAnchorElement> & { href:
 type NativeButtonProps = CommonProps & ButtonHTMLAttributes<HTMLButtonElement> & { href?: never }
 
 const base =
-  'inline-flex select-none items-center justify-center gap-2 whitespace-nowrap rounded-btn font-display font-semibold uppercase tracking-wider ' +
+  'inline-flex shrink-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded-btn font-display font-semibold uppercase tracking-wider ' +
   'transition duration-200 ease-out motion-reduce:transition-none ' +
   'focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent ' +
   'disabled:pointer-events-none disabled:opacity-60'
