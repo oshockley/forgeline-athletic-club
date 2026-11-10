@@ -75,9 +75,9 @@ function PlanCard({ plan, billing }: { plan: Plan; billing: BillingCycle }) {
         href="#signup"
         variant={plan.popular ? 'primary' : 'secondary'}
         className="mt-9 w-full"
-        aria-label={plan.popular ? `Start free trial on the ${plan.name} plan` : `Join the ${plan.name} plan`}
       >
         {plan.popular ? 'Start Free Trial' : `Join ${plan.name}`}
+        <span className="sr-only">{plan.popular ? ` on the ${plan.name} plan` : ' plan'}</span>
       </Button>
     </article>
   )

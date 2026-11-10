@@ -21,8 +21,9 @@ export function Footer() {
       <Container>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="max-w-sm">
-            <a href="#top" className="inline-block rounded-btn" aria-label="Forgeline Athletic Club, back to top">
+            <a href="#top" className="inline-block rounded-btn">
               <Logo size="lg" />
+              <span className="sr-only">, back to top</span>
             </a>
             <p className="mt-5 leading-relaxed text-muted">{site.tagline}</p>
             <ul className="mt-6 flex gap-3">

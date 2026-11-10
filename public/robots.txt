@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forgeline-athletic-club.vercel.app/sitemap.xml

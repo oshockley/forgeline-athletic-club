@@ -46,8 +46,9 @@ export function Header() {
       )}
     >
       <Container className="flex h-header items-center justify-between gap-6">
-        <a href="#top" className="rounded-btn" aria-label="Forgeline Athletic Club, back to top">
+        <a href="#top" className="rounded-btn">
           <Logo />
+          <span className="sr-only">, back to top</span>
         </a>
 
         <nav aria-label="Primary" className="hidden md:block">

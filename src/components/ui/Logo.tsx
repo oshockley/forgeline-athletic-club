@@ -32,7 +32,7 @@ export function Logo({ className, size = 'md' }: LogoProps) {
           )}
         >
           Forgeline
-        </span>
+        </span>{' '}
         <span
           className={cn(
             'font-display font-medium uppercase text-muted',

@@ -7,6 +7,13 @@ import { unsplash } from '../lib/images'
 
 const HERO_ID = '1517836357463-d25dfeac3438'
 
+// Headline + intro are the LCP candidates: slide them in without hiding them,
+// so they paint immediately. Secondary elements also fade.
+const slideUp = {
+  hidden: { y: 24 },
+  show: { y: 0 },
+}
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0 },
@@ -57,14 +64,14 @@ export function Hero() {
 
           <m.h1
             id="hero-title"
-            variants={fadeUp}
+            variants={slideUp}
             className="mt-6 font-display text-[clamp(3.5rem,13vw,8.5rem)] font-bold uppercase leading-[0.88] tracking-tight"
           >
             Train Harder.
             <span className="block text-accent">Feel Stronger.</span>
           </m.h1>
 
-          <m.p variants={fadeUp} className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-fg/80 sm:text-xl">
+          <m.p variants={slideUp} className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-fg/80 sm:text-xl">
             Expert coaches, 40+ classes a week and a community that holds you to it. Everything you need to
             be stronger next year than you are today.
           </m.p>
